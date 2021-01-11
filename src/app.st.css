@@ -1,0 +1,80 @@
+
+:global(html) {
+    background-color: rgb(37, 37, 38);
+    color: white;
+    text-align: center;
+}
+
+:import {
+    -st-from: './header.st.css';
+    -st-default: Header;
+}
+
+.header {
+    -st-extends: Header;
+    margin: 1em 0;
+}
+.header::title {
+    margin: 0;
+    font-size: 2em;
+}
+.header::anchor {
+    text-decoration-color: green;
+}
+
+:import {
+    -st-from: './components/addtodo.st.css';
+    -st-default: AddTodo;
+}
+.addtodo{
+    -st-extends: AddTodo;
+}
+
+.addtodo::input{
+    margin: 0 1rem;
+}
+:import {
+    -st-from: './components/todolist.st.css';
+    -st-default: TodoList;
+}
+.todolist{
+    -st-extends: TodoList;
+    margin:2rem auto;
+    width: 26rem;
+}
+.todolist::todoline{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.todolist::todoline:not(:last-child){
+    border-bottom: 1px solid white ;
+}
+
+:global(button){
+    display: inline-block;
+    border: none;
+    padding: .1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: .8rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+:global(button:hover),
+:global(button:focus) {
+    background: #0053ba;
+}
+:global(button:focus) {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+:global(button:active) {
+    transform: scale(0.99);
+}
