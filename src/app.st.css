@@ -1,26 +1,13 @@
-
+.root{
+    display: flex;
+    flex-direction: row;
+}
 :global(html) {
     background-color: rgb(37, 37, 38);
     color: white;
     text-align: center;
 }
 
-:import {
-    -st-from: './header.st.css';
-    -st-default: Header;
-}
-
-.header {
-    -st-extends: Header;
-    margin: 1em 0;
-}
-.header::title {
-    margin: 0;
-    font-size: 2em;
-}
-.header::anchor {
-    text-decoration-color: green;
-}
 
 :import {
     -st-from: './components/addtodo.st.css';
@@ -49,6 +36,10 @@
 }
 .todolist::todoline:not(:last-child){
     border-bottom: 1px solid white ;
+}
+
+.main{
+    width:100%
 }
 
 :global(button){

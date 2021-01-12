@@ -1,0 +1,43 @@
+@namespace "SideNavbar";
+
+.root{
+
+}
+.box{
+  width:200px;
+}
+.sidebar{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:200px;
+  height:100%;
+  background:#151719;
+  transition:all 300ms linear;
+  -st-states: hidden;
+}
+.sidebar:hidden {
+    left:-200px;
+}
+
+.togglebtn{
+  position:absolute;
+  left:220px;
+  top:10px;
+}
+.togglebtn span{
+  display:block;
+  width:30px;
+  height:5px;
+  background:#fcfcfc;
+  margin:5px 0px;
+  cursor:pointer;
+}
+
+.item{
+  padding:15px 10px;
+  border-bottom:1px solid #444;
+  color:#fcfcfc;
+  text-transform:uppercase;
+  font-size:12px;
+}

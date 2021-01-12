@@ -1,4 +1,11 @@
-.root {}
-.title {}
-.anchor {}
-.icon {}
+
+.root {
+  margin: 1em 0;
+}
+.title {
+  margin: 0;
+  font-size: 2em;
+}
+.anchor {
+  text-decoration-color: green;
+}

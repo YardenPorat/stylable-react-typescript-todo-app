@@ -1,11 +1,11 @@
 {
-  "printWidth": 100,
+  "printWidth": 80,
   "singleQuote": true,
   "overrides": [
     {
       "files": ["*.js", "*.ts", "*.tsx"],
       "options": {
-        "tabWidth": 4
+        "tabWidth": 2
       }
     }
   ]
